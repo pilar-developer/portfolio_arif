@@ -1,0 +1,390 @@
+/* Background gradien lembut */
+body {
+  background: linear-gradient(120deg, #ffffff, #f5eaff, #eafaf8);
+  color: #1a1a1a;
+  padding-top: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0d6efd !important; /* biru saat aktif */
+}
+
+
+/* Efek kursor berkedip */
+.cursor::after {
+  content: "|";
+  animation: blink 0.8s infinite;
+  color: #8b5cf6;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.1%, 100% { opacity: 0; }
+}
+
+
+/* Logo bundar di navbar */
+.logo-circle {
+  background: #8b5cf6;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+}
+
+/* Gaya default link navbar */
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #8b5cf6;
+}
+
+/* Warna saat aktif */
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important; /* Warna biru Bootstrap */
+  font-weight: 600;
+  position: relative;
+}
+
+/* Garis bawah kecil pada link aktif */
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #0d6efd;
+  border-radius: 10px;
+}
+
+
+/* Hero section layout */
+.hero-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.hero-section h1 {
+  color: #111;
+  line-height: 1.2;
+}
+
+.hero-section p {
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+.hero-section a.btn {
+  background-color: #8b5cf6;
+  border: none;
+  transition: 0.3s ease;
+}
+.hero-section a.btn:hover {
+  background-color: #7c3aed;
+}
+
+/* Foto profil */
+.profile-card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: inline-block;
+}
+
+.profile-img {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Kartu statistik bawah */
+.stat-card {
+  background-color: #f6edff;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  background-color: #ede9fe;
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  color: #6d28d9;
+}
+
+#about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#about .card {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+#about .card:hover {
+  transform: translateY(-5px);
+}
+
+#about h2 {
+  color: #1a1a1a;
+}
+
+#about p {
+  line-height: 1.8;
+}
+
+#about .btn:hover {
+  opacity: 0.9;
+}
+
+.text-purple {
+  color: #7b3ff6;
+}
+
+.tab-btn {
+  border: 2px solid #7b3ff6;
+  background: transparent;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: #7b3ff6;
+  color: #fff;
+}
+
+.tab-btn:hover {
+  background: #7b3ff6;
+  color: #fff;
+}
+
+.progress {
+  background: #e9ecef;
+  border-radius: 10px;
+}
+
+.certificate-img {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Modal */
+.certificate-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.certificate-modal .modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 10px;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.certificate-modal .close {
+  position: absolute;
+  top: 30px; right: 50px;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.certificate-modal .close:hover {
+  color: #bbb;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.prev { left: 30px; }
+.next { right: 30px; }
+
+.prev:hover, .next:hover {
+  color: #7b3ff6;
+}
+
+.logo-img {
+  height: 35px;      /* ukuran tinggi logo */
+  width: auto;       /* biar proporsional */
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  font-size: 1.2rem; /* ukuran teks "Pilar Developer" */
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 28px; /* lebih kecil di layar hp */
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
+.play-video-btn .circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: rgba(130, 91, 255, 0.25); /* ungu transparan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.play-video-btn .inner-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #7b3ff6;
+  color: #7b3ff6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #fff;
+}
+
+.play-video-btn:hover .circle {
+  transform: scale(1.1);
+}
+
+.play-video-btn:hover span {
+  color: #7b3ff6;
+}
+
+.play-video-btn i {
+  margin-left: 2px; /* sedikit geser ke kanan untuk proporsi play icon */
+}
+
+#portfolio .card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+#portfolio .card:hover img {
+  transform: scale(1.05);
+}
+
+#portfolio .card {
+  transition: all 0.3s ease;
+}
+
+#portfolio .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#contact .form-control {
+  border-radius: 12px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+
+#contact .form-control:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.2);
+}
+
+#contact .btn-primary {
+  background-color: #6c63ff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+  background-color: #5848e5;
+  transform: translateY(-2px);
+}
+
+#contact i {
+  transition: color 0.3s ease;
+}
+
+#contact a:hover i {
+  color: #5848e5;
+}
+.footer {
+  background: #1c1c1e;
+}
+
+.footer a:hover {
+  color: #6c63ff !important;
+}
+
+.footer .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer .social-link:hover {
+  background: #6c63ff;
+  color: #fff;
+  transform: translateY(-3px);
+}
+

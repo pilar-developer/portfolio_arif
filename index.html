@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Muhamad Arif</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#hero">
+          <div class="d-flex align-items-center justify-content-center me-2">
+            <span class="me-2">
+              <img
+                src="pilar.png"
+                alt="Pilar Logo"
+                class="logo-img"
+                style="width: 35px; height: auto"
+              />
+            </span>
+          </div>
+          Pilar Developer
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Sertifikat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5" id="hero">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- Left Text -->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="fw-bold display-5 mb-3">
+              <span id="typing-text"></span>
+            </h1>
+            <p class="fs-5 text-secondary mb-4">
+              Saya merupakan lulusan baru dari jurusan
+              <a href="#" class="text-decoration-none text-dark"
+                >Sistem Informasi</a
+              >
+              yang memiliki minat di bidang
+              <a href="#" class="text-decoration-none text-dark"
+                >Web Developer, Database</a
+              >
+              dan
+              <a href="#" class="text-decoration-none text-dark"
+                >Pengembangan Web</a
+              >. Saya bersemangat untuk menciptakan pengalaman digital yang
+              ramah pengguna serta terus belajar mengembangkan kemampuan di
+              bidang teknologi dan desain.
+            </p>
+
+            <div class="d-flex align-items-center gap-4 mt-4">
+              <!-- Tombol Say Hello -->
+              <a href="#" class="btn btn-primary px-4 py-2 fw-semibold">
+                Say Hello!
+              </a>
+
+              <!-- Tombol Play Video -->
+              <a
+                href="https://youtu.be/6b8Vr5C1hgM?si=yu5yTzBcMauYGhzW"
+                target="_blank"
+                class="d-flex align-items-center text-decoration-none play-video-btn"
+              >
+                <div
+                  class="circle me-2 d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="inner-circle d-flex justify-content-center align-items-center"
+                  >
+                    <i class="bx bx-play-circle"></i>
+                  </div>
+                </div>
+                <span class="fw-semibold text-dark">Play Video</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="col-lg-5 text-center">
+            <div class="profile-card shadow-lg">
+              <img
+                src="img/arif.png"
+                alt="Foto Diri"
+                class="img-fluid profile-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="row text-center mt-5 pt-4">
+          <div class="col-md-4 mb-3">
+            <div class="stat-card py-4 rounded">
+              <h3 class="fw-bold mb-1">Sarjana</h3>
+              <p class="text-muted mb-0">Sistem Informasi</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="stat-card py-4 rounded">
+              <h3 class="fw-bold mb-1">3.40</h3>
+              <p class="text-muted mb-0">IPK</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="stat-card py-4 rounded">
+              <h3 class="fw-bold mb-1">10+</h3>
+              <p class="text-muted mb-0">Research / Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-5"
+      style="
+        background: radial-gradient(
+          circle at bottom left,
+          #fff4e1 0%,
+          #e9fdf9 50%,
+          #e6fdf8 100%
+        );
+      "
+    >
+      <div class="container d-flex justify-content-center">
+        <div
+          class="card shadow-lg border-0 rounded-4 p-4 p-md-5"
+          style="max-width: 1000px; background: #fff"
+        >
+          <div class="row align-items-center">
+            <!-- Foto + Card Sosial Media -->
+            <div class="col-md-5 text-center mb-4 mb-md-0">
+              <div
+                class="bg-light rounded-4 p-3 position-relative"
+                style="background: #f8f9fa"
+              >
+                <img
+                  src="img/arif2.png"
+                  alt="About Me"
+                  class="img-fluid rounded-3"
+                />
+
+                <!-- Card Sosial Media -->
+                <div
+                  class="social-card shadow-sm d-flex justify-content-center gap-4 align-items-center rounded-4 py-2 px-3 position-absolute start-50 translate-middle-x"
+                  style="
+                    background: #fff;
+                    bottom: -25px;
+                    width: 65%;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                  "
+                >
+                  <a
+                    href="#"
+                    class="text-decoration-none fs-5"
+                    style="color: #7b3ff6"
+                  >
+                    <i class="bx bxl-facebook-circle"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@AweWewewewe"
+                    class="text-decoration-none fs-5"
+                    style="color: #7b3ff6"
+                  >
+                    <i class="bx bxl-youtube"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/awe_wewewewe"
+                    class="text-decoration-none fs-5"
+                    style="color: #7b3ff6"
+                  >
+                    <i class="bx bxl-instagram-alt"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/muhamad-arif13"
+                    class="text-decoration-none fs-5"
+                    style="color: #7b3ff6"
+                  >
+                    <i class="bx bxl-linkedin-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teks -->
+            <div class="col-md-7 mt-2">
+              <h2 class="fw-bold mb-3">
+                Pengembangan Web dan Manajemen Database
+              </h2>
+              <p class="text-muted mb-3">
+                Saya merupakan lulusan Sistem Informasi yang memiliki keahlian
+                di bidang Pengembangan Web dan Manajemen Database.  Saya berfokus pada pembuatan aplikasi web yang responsif,
+                modern, dan efisien dengan menggunakan teknologi seperti HTML,
+                CSS, Bootstrap, PHP, Laravel, dan MySQL. Saya bersemangat untuk mengembangkan solusi digital yang
+                fungsional serta memberikan pengalaman terbaik bagi pengguna.
+              </p>
+              <!-- Tombol -->
+              <div class="d-flex flex-wrap gap-3">
+                <a
+                  href="https://github.com/pilar-developer"
+                  class="btn px-4 fw-semibold text-white"
+                  style="background: #7b3ff6; border-radius: 8px"
+                  >My Projects</a
+                >
+                <a
+                  href="cv.pdf"
+                  class="btn btn-light border px-4 fw-semibold d-flex align-items-center"
+                  style="border-radius: 8px"
+                >
+                  <i class="bx bxs-download"></i> Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5" style="background: #fff">
+      <div class="container">
+        <div class="row">
+          <!-- Skills -->
+          <div class="col-lg-6 mb-4">
+            <h2 class="fw-bold mb-4">Skills</h2>
+            <h4 class="fw-semibold mb-4">My Skills</h4>
+
+            <div class="row">
+              <div class="col-6">
+                <p class="mb-1 fw-semibold">
+                  HTML <span class="float-end">95%</span>
+                </p>
+                <div class="progress mb-3" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    style="width: 95%; background: #7b3ff6"
+                  ></div>
+                </div>
+
+                <p class="mb-1 fw-semibold">
+                  CSS <span class="float-end">80%</span>
+                </p>
+                <div class="progress mb-3" style="height: 8px">
+                  <div class="progress-bar bg-warning" style="width: 80%"></div>
+                </div>
+
+                <p class="mb-1 fw-semibold">
+                  JavaScript <span class="float-end">75%</span>
+                </p>
+                <div class="progress mb-3" style="height: 8px">
+                  <div class="progress-bar bg-success" style="width: 75%"></div>
+                </div>
+
+                <p class="mb-1 fw-semibold">
+                  PHP <span class="float-end">85%</span>
+                </p>
+                <div class="progress mb-3" style="height: 8px">
+                  <div class="progress-bar bg-danger" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <p class="mb-1 fw-semibold">
+                  Laravel <span class="float-end">90%</span>
+                </p>
+                <div class="progress mb-3" style="height: 8px">
+                  <div class="progress-bar bg-danger" style="width: 90%"></div>
+                </div>
+
+                <p class="mb-1 fw-semibold">
+                  MySQL <span class="float-end">80%</span>
+                </p>
+                <div class="progress mb-3" style="height: 8px">
+                  <div class="progress-bar bg-dark" style="width: 80%"></div>
+                </div>
+
+                <p class="mb-1 fw-semibold">
+                  Bootstrap <span class="float-end">88%</span>
+                </p>
+                <div class="progress mb-3" style="height: 8px">
+                  <div class="progress-bar bg-warning" style="width: 88%"></div>
+                </div>
+
+                <p class="mb-1 fw-semibold">
+                  Microsoft Office <span class="float-end">95%</span>
+                </p>
+                <div class="progress mb-3" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    style="width: 95%; background: #00c4ff"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience & Education -->
+          <div class="col-lg-6">
+            <div class="d-flex mb-4">
+              <button class="tab-btn active me-2" id="experienceBtn">
+                Experience
+              </button>
+              <button class="tab-btn" id="educationBtn">Education</button>
+            </div>
+
+            <!-- Experience Content -->
+            <div id="experienceContent">
+              <div class="mb-4">
+                <h5 class="fw-bold">Dana Pensiun Krakatau Steel</h5>
+                <p class="text-muted mb-1">
+                  <span class="text-purple">Juli 2024</span>
+                </p>
+                <p class="fw-semibold">SDM</p>
+              </div>
+              <div>
+                <h5 class="fw-bold">LDK Nursyahid IU</h5>
+                <p class="text-muted mb-1">
+                  <span class="text-purple">2024 - 2025</span>
+                </p>
+                <p class="fw-semibold">Ketua Divisi Syiar</p>
+              </div>
+            </div>
+
+            <!-- Education Content -->
+            <div id="educationContent" style="display: none">
+              <div class="mb-4">
+                <h5 class="fw-bold">STTIKOM Insan Unggul</h5>
+                <p class="text-muted mb-1">
+                  <span class="text-purple">2021 - 2025</span>
+                </p>
+                <p class="fw-semibold">Sistem Informasi - 3,40</p>
+              </div>
+              <div>
+                <h5 class="fw-bold">MAN 2 Kota Cilegon</h5>
+                <p class="text-muted mb-1">
+                  <span class="text-purple">2018 - 2021</span>
+                </p>
+                <p class="fw-semibold">Ilmu Pengetahuan Sosial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="py-5" style="background: #fff">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Sertifikat</h2>
+        <p class="text-muted mb-5">
+          Beberapa sertifikat yang saya peroleh selama masa kuliah dan
+          pelatihan.
+        </p>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <img
+              src="img/sertifikat/sertifikat1.jpg"
+              class="img-fluid rounded shadow-sm certificate-img"
+              alt="Certificate 1"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/sertifikat/sertifikat2.jpg"
+              class="img-fluid rounded shadow-sm certificate-img"
+              alt="Certificate 2"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/sertifikat/sertifikat3.png"
+              class="img-fluid rounded shadow-sm certificate-img"
+              alt="Certificate 3"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/sertifikat/sertifikat4.jpg"
+              class="img-fluid rounded shadow-sm certificate-img"
+              alt="Certificate 4"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/sertifikat/sertifikat5.jpg"
+              class="img-fluid rounded shadow-sm certificate-img"
+              alt="Certificate 5"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="img/sertifikat/dasarphp.jpg"
+              class="img-fluid rounded shadow-sm certificate-img"
+              alt="Certificate 5"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Preview -->
+      <div id="certificateModal" class="certificate-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+    </section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Portfolio</h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- PORTOFOLIO 1 -->
+          <div class="col-md-5">
+            <div class="card border-0 shadow rounded-4 overflow-hidden">
+              <img
+                src="img/portofolio/toko_online/tokoonline.png"
+                class="card-img-top"
+                alt="Portfolio 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="fw-bold">Toko Online dengan integrasi pembayaran E-wallet</h5>
+                <p class="text-muted">Laravel, MySQL, Midtrans</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <button
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#portfolioModal1"
+                  >
+                    Lihat Gambar
+                  </button>
+                  <a
+                    href="https://your-project-link.com"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    Lihat Proyek
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PORTOFOLIO 2 -->
+          <div class="col-md-5">
+            <div class="card border-0 shadow rounded-4 overflow-hidden">
+              <img src="img/portofolio/pengelolaanobat/obat.png" class="card-img-top" alt="Portfolio 2" />
+              <div class="card-body text-center">
+                <h5 class="fw-bold">Sistem Informasi Pengelolaan Obat</h5>
+                <p class="text-muted">Laravel, MySQL</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <button
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#portfolioModal2"
+                  >
+                    Lihat Gambar
+                  </button>
+                  <a
+                    href="https://github.com/pilar-developer/pengelolaan_obat"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    Lihat Proyek
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PORTOFOLIO 3 -->
+          <div class="col-md-5">
+            <div class="card border-0 shadow rounded-4 overflow-hidden">
+              <img src="img/portofolio/siakad/dashboardsiakad.png" class="card-img-top" alt="Portfolio 2" />
+              <div class="card-body text-center">
+                <h5 class="fw-bold">Siakad</h5>
+                <p class="text-muted">Bootstrap, CSS, JavaScript</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <button
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#portfolioModal3"
+                  >
+                    Lihat Gambar
+                  </button>
+                  <a
+                    href="https://pilar-developer.github.io/dashboard"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    Lihat Proyek
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PORTOFOLIO 4 -->
+          <div class="col-md-5">
+            <div class="card border-0 shadow rounded-4 overflow-hidden">
+              <img src="arif.png" class="card-img-top" alt="Portfolio 2" />
+              <div class="card-body text-center">
+                <h5 class="fw-bold">Website Company Profile</h5>
+                <p class="text-muted">HTML, CSS, JavaScript</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <button
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#portfolioModal2"
+                  >
+                    Lihat Gambar
+                  </button>
+                  <a
+                    href="https://your-company-link.com"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    Lihat Proyek
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= MODAL PORTOFOLIO 1 ======= -->
+    <div
+      class="modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Toko Online dengan integrasi pembayaran E-wallet</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="carouselPortfolio1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/portofolio/toko_online/image.png"
+                    class="d-block w-100"
+                    alt="Gambar 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/portofolio/toko_online/tokoonline2.png"
+                    class="d-block w-100"
+                    alt="Gambar 2"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselPortfolio1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselPortfolio1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= MODAL PORTOFOLIO 2 ======= -->
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Sistem Informasi Pengelolaan Obat</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="carouselPortfolio2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/portofolio/pengelolaanobat/login.png"
+                    class="d-block w-100"
+                    alt="Gambar 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/portofolio/pengelolaanobat/obat.png"
+                    class="d-block w-100"
+                    alt="Gambar 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/portofolio/pengelolaanobat/obat2.png"
+                    class="d-block w-100"
+                    alt="Gambar 2"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselPortfolio2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselPortfolio2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= MODAL PORTOFOLIO 3 ======= -->
+    <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Sistem Informasi Pengelolaan Obat</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="carouselPortfolio3"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/portofolio/siakad/dashboardsiakad.png"
+                    class="d-block w-100"
+                    alt="Gambar 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/portofolio/siakad/hasilstudi.png"
+                    class="d-block w-100"
+                    alt="Gambar 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/portofolio/pengelolaanobat/obat2.png"
+                    class="d-block w-100"
+                    alt="Gambar 2"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselPortfolio3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselPortfolio3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Kontak Saya</h2>
+
+        <div class="row justify-content-center align-items-center">
+          <!-- Contact Info -->
+          <div class="col-md-5 mb-4">
+            <h4 class="fw-semibold mb-3">Segera Hubungi Saya</h4>
+            <p class="text-muted">
+              Saya selalu terbuka untuk berdiskusi mengenai proyek baru, ide kreatif, atau peluang untuk menjadi bagian dari visi Anda.
+            </p>
+
+            <ul class="list-unstyled mt-4">
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-geo-alt-fill text-primary me-3 fs-5"></i>
+                <span>Cilegon, Indonesia</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-envelope-fill text-primary me-3 fs-5"></i>
+                <span>arif.arema212@gmail.com</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-telephone-fill text-primary me-3 fs-5"></i>
+                <span>+6283812173376</span>
+              </li>
+            </ul>
+
+            <div class="d-flex gap-3 mt-4">
+              <a href="https://www.linkedin.com/in/muhamad-arif13" class="text-primary fs-4"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://github.com/pilar-developer" class="text-primary fs-4"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="https://www.instagram.com/awe_wewewewe" class="text-primary fs-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com/@AweWewewewe" class="text-primary fs-4"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <form
+              action="#"
+              method="POST"
+              class="shadow-sm p-4 rounded-4 bg-white"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label fw-semibold"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Nama"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label fw-semibold"
+                  > Pesan</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Tulis Pesan anda..."
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary w-100 py-2 fw-semibold"
+              >
+                Kirim
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer text-white py-5 mt-5">
+      <div class="container">
+        <div class="row justify-content-between align-items-start">
+          <!-- Brand Info -->
+          <div class="col-md-4 mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="pilar.png" alt="Logo" width="40" class="me-2" />
+              <h5 class="fw-bold mb-0">Pilar Developer</h5>
+            </div>
+            <p class="text-white-50">
+              Menciptakan pengalaman web yang inovatif, responsif, dan modern dengan perpaduan antara kreativitas dan ketelitian.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-semibold mb-3">Menu</h6>
+            <ul class="list-unstyled text-white-50">
+              <li>
+                <a
+                  href="#about"
+                  class="text-white-50 text-decoration-none d-block mb-2"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="text-white-50 text-decoration-none d-block mb-2"
+                  >Skill</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-white-50 text-decoration-none d-block mb-2"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-white-50 text-decoration-none d-block"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Social -->
+          <div class="col-md-4">
+            <h6 class="fw-semibold mb-3">Kontak</h6>
+            <p class="text-white-50 mb-3">
+              Cilegon, Banten<br />
+              Email:
+              <a href="mailto:arif.arema212@gmail.com" class="text-white-50"
+                >arif.arema212@gmail.com</a
+              >
+            </p>
+            <div class="d-flex gap-3">
+              <a href="https://www.linkedin.com/in/muhamad-arif13" class="social-link">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/pilar-developer" class="social-link">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.instagram.com/awe_wewewewe" class="social-link"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com/@AweWewewewe" class="social-link">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="text-white-50 my-4" />
+
+        <div class="text-center text-white-50 small">
+          &copy; <span id="year"></span> Pilar Developer - Muhamad Arif. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/index.js"></script>
+    <script>
+      const navLinks = document.querySelectorAll("#navbar-links .nav-link");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.forEach((item) => item.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
